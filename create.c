@@ -110,5 +110,9 @@ main()
   shmdt((char  *)infoptr); /* detach the shared memory segment */
   shmctl(id, IPC_RMID,(struct shmid_ds *)0); /* destroy the shared memory segment*/
   semctl(sema_set,0,IPC_RMID); /*Remove the semaphore set */
+  
+  sleep(10);
+  signal(sema_set, 0);
+  
   exit(0);
 }
