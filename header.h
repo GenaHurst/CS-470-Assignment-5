@@ -8,6 +8,9 @@
 #include <sys/ipc.h>
 #include <sys/shm.h>
 #include <sys/sem.h>
+#include <sys/stat.h>
+#include <unistd.h>
+#include <pwd.h>
 
 #define KEY  ((key_t)(19191))
 #define SEGSIZE  sizeof(struct StudentInfo)
