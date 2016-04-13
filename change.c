@@ -22,7 +22,7 @@ main(int argc, char* argv[])
   }
 
 /* attach the already created shared memory segment to infoptr so the
-   shared memory segment can be accessed through 'inforptr'
+   shared memory segment can be accessed through 'infoptr'
    */
   infoptr=(struct StudentInfo *)shmat(id,0,0);
   if (infoptr <= (struct StudentInfo *) (0)) {
