@@ -1,17 +1,6 @@
 //------------------------------------------------
 
 /*File change.c */
-
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
-#include <sys/types.h>
-#include <sys/ipc.h>
-#include <sys/shm.h>
-#include <sys/stat.h>
-#include <unistd.h>
-#include <sys/sem.h>
-#include <pwd.h>
 #include "header.h"
 
 main(int argc, char* argv[])
