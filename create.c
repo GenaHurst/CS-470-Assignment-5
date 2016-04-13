@@ -56,6 +56,7 @@ main()
   strcpy(infoptr->whoModified, " ");
   */
   
+  //Open the file for reading, if possible.
   FILE *myfile;
   myfile = fopen("sampleinput.txt", "r");
   if (myfile == NULL)
@@ -64,6 +65,14 @@ main()
      exit(2);
   }
   
+  //Read through the file, where the file is set up in the following format for every four lines:
+  /*
+  	Line 1: Student Name
+  	Line 2: Student ID
+  	Line 3: Student Address
+  	Line 4: Student Phone Number
+  */
+ 
   char *lineRead = NULL;
   size_t length = 0;
 
@@ -82,7 +91,8 @@ main()
     getline(&lineRead, &length, myfile);
     strcpy(infoPtr->telNumber, line);
   }
-  
+ 
+  //Close the file when the reading is done. 
   fclose(myfile);
   
   /*print the contents of the shared memory segment */ 
