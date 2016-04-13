@@ -16,10 +16,10 @@
 #define SEMA_KEY   ((key_t)(1919))
 
 struct StudentInfo{
-  char fName[20];
-  char lName[20];
+  char sName[30];
+  char sID[10];
+  char sAddress[30];
   char telNumber[15];
-  char whoModified[10];
 };
 
 void Wait(int semaph, int n);
