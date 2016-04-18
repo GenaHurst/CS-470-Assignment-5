@@ -1,14 +1,15 @@
+/*
 Get the ids of the two shared memory segments created;
 Attach the shared memory segments;
 Get the id of the semaphore set created in Load.c;
-
 Wait(semaset, 0)// assuming semaset is the id of the semaphore set 
 write the contents of the shared memory to file in the format of the input file;
 delete the shared memory segments
 sleep(10) // for debugging and testing
 Signal(semaset, 0);
-
 delete the semaphores.
+*/
+
 
 #include "header.h"
 
